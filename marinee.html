@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marine Drive - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="marinee.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="logo">Mumbai Travel Guide</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- ☰ click korle ei dropdown asbe -->
+<div id="navMenu" class="dropdown-menu">
+  <a href="index.html">Home</a>
+  <a href="destination.html">Destinations</a>
+  <a href="food.html">Food</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+  <!-- Main Content -->
+  <main>
+    <h1>Explore Marine Drive</h1>
+
+    <section class="gallery">
+      <img src="m1.jpg" alt="Marine Drive View 1" onclick="openModal(this)">
+      <img src="m2.webp" alt="Marine Drive View 2" onclick="openModal(this)">
+      <img src="m3.jpeg" alt="Marine Drive View 3" onclick="openModal(this)">
+      <img src="m4.jpg" alt="Marine Drive View 4" onclick="openModal(this)">
+    </section>
+
+    <section class="card">
+      <h2>📍 Introduction</h2>
+      <p>Marine Drive is a 3.6 km long boulevard in South Mumbai. It's called the "Queen’s Necklace" for its curve and golden streetlights shining at night.</p>
+    </section>
+
+    <section class="card">
+      <h2>✨ Best Moments</h2>
+      <ul>
+        <li>Evening sunsets and sea breeze</li>
+        <li>Walk with friends/family along the promenade</li>
+        <li>Photograph the Mumbai skyline</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mumbai Travel Guide. All rights reserved.</p>
+  </footer>
+
+  <!-- Image Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImg" class="modal-content">
+  </div>
+
+  <script src="mari.js"></script>
+</body>
+</html>
+
+
+

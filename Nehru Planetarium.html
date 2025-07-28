@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nehru Planetarium - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="nehru-planetarium-style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Nehru Planetarium</h1>
+
+    <div class="gallery">
+      <img src="n2.png" alt="Nehru Planetarium Building" onclick="openModal(this)">
+      <img src="n3.avif" alt="Inside the Dome" onclick="openModal(this)">
+      <img src="n4.webp" alt="Astronomy Exhibit" onclick="openModal(this)">
+      <img src="n5.avif" alt="Visitors Watching a Show" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🌌 Introduction</h2>
+      <p>Nehru Planetarium, located in Worli, is a hub of science and astronomy education in Mumbai. It attracts students, science lovers, and tourists with its immersive sky shows and exhibits.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 Highlights</h2>
+      <ul>
+        <li>Daily sky shows on stars, planets, and space</li>
+        <li>Astronomy quizzes and lectures</li>
+        <li>Science exhibitions and telescope viewing events</li>
+        <li>Educational displays and models</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Morning or early afternoon shows</li>
+        <li>Weekends for special events</li>
+        <li>On International Astronomy Day (May)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🔭 Things to Do</h2>
+      <ul>
+        <li>Watch interactive sky shows in the dome</li>
+        <li>Explore space-themed exhibits</li>
+        <li>Join a guided astronomy workshop</li>
+        <li>View the sun or planets through telescopes</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="nehru-planetarium-script.js"></script>
+</body>
+</html>

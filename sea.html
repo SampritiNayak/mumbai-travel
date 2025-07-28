@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bandra-Worli Sea Link - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="sea.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Bandra-Worli Sea Link</h1>
+
+    <div class="gallery">
+      <img src="s2.webp" alt="Sea Link Night View" onclick="openModal(this)">
+      <img src="s4.jpg" alt="Sea Link from Afar" onclick="openModal(this)">
+      <img src="s3.jpeg" alt="Bridge Close-up" onclick="openModal(this)">
+      <img src="s5.avif" alt="Evening Traffic View" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🌉 Introduction</h2>
+      <p>The Bandra-Worli Sea Link is one of Mumbai's most iconic landmarks, connecting Bandra in the Western suburbs to Worli in South Mumbai. It’s a stunning cable-stayed bridge known for its architectural beauty and sea-facing drive.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Commissioned in 2009, the Sea Link was built to reduce traffic congestion between the suburbs and the city. It spans 5.6 kilometers and took nearly 10 years to complete, becoming a symbol of modern infrastructure in Mumbai.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Evenings for night views with lights</li>
+        <li>Early morning drives for sunrise</li>
+        <li>October to March for pleasant weather</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📸 Things to See</h2>
+      <ul>
+        <li>Stunning views of the Arabian Sea</li>
+        <li>Bridge lights during night</li>
+        <li>Photo opportunities from Bandra Fort</li>
+        <li>Sunsets from the Bandra promenade</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="sea.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siddhivinayak Temple - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="siddi.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Siddhivinayak Temple</h1>
+
+    <div class="gallery">
+      <img src="st2.avif" alt="Temple Front View" onclick="openModal(this)">
+      <img src="st3.jpeg" alt="Ganesha Idol" onclick="openModal(this)">
+      <img src="st4.jpeg" alt="Inside Temple Premises" onclick="openModal(this)">
+      <img src="st5.webp" alt="Devotees at Temple" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🛕 Introduction</h2>
+      <p>The Shree Siddhivinayak Ganapati Mandir is a famous Hindu temple dedicated to Lord Ganesha, located in Prabhadevi, Mumbai. It is one of the richest and most visited temples in India.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Built in 1801, the temple started as a small structure and was later expanded due to its growing popularity. It has become a major spiritual and cultural landmark for Mumbaikars and tourists alike.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Tuesday mornings (devotees' day)</li>
+        <li>During Ganesh Chaturthi festival</li>
+        <li>Weekdays for shorter queues</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🙏 Things to Do</h2>
+      <ul>
+        <li>Seek blessings from Lord Ganesha</li>
+        <li>Observe traditional rituals and aartis</li>
+        <li>Buy prasad and spiritual souvenirs</li>
+        <li>Admire the architecture and gold dome</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="siddi.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Vipassana Pagoda - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="pagoda-style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Global Vipassana Pagoda</h1>
+
+    <div class="gallery">
+      <img src="pa2.jpg" alt="Pagoda Dome" onclick="openModal(this)">
+      <img src="pa3.webp" alt="Pagoda Entry" onclick="openModal(this)">
+      <img src="pa4.jpg" alt="Pagoda Side View" onclick="openModal(this)">
+      <img src="pa5.jpg" alt="Inside Pagoda" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🧘‍♂️ Introduction</h2>
+      <p>The Global Vipassana Pagoda is a massive meditation center located near Gorai Creek. It promotes the ancient practice of Vipassana meditation taught by Gautama Buddha and serves as a symbol of gratitude towards him.</p>
+    </div>
+
+    <div class="card">
+      <h2>📌 Highlights</h2>
+      <ul>
+        <li>World’s largest stone dome built without pillars</li>
+        <li>Peaceful meditation hall with seating for 8,000</li>
+        <li>Buddhist relics enshrined inside</li>
+        <li>Free entry and guided tours</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Early morning or before sunset</li>
+        <li>Weekdays for less crowd</li>
+        <li>During Buddha Purnima for special events</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📷 Things to Do</h2>
+      <ul>
+        <li>Attend meditation sessions</li>
+        <li>Walk in peaceful gardens</li>
+        <li>View exhibition on Buddha’s teachings</li>
+        <li>Take ferry from Gorai for scenic ride</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="pagoda-script.js"></script>
+</body>
+</html>

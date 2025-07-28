@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phoenix Mall - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="phoenix-mall-style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Phoenix Mall</h1>
+
+    <div class="gallery">
+      <img src="p2.webp" alt="Phoenix Mall Exterior" onclick="openModal(this)">
+      <img src="p3.jpg" alt="Inside Phoenix Mall" onclick="openModal(this)">
+      <img src="p4.webp" alt="Shopping Area" onclick="openModal(this)">
+      <img src="p5.jpg" alt="Food Court" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🛍️ Introduction</h2>
+      <p>Phoenix Mall is one of Mumbai’s largest and most luxurious shopping malls, located in Lower Parel. It offers a blend of international brands, gourmet restaurants, cinemas, and entertainment zones.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 Highlights</h2>
+      <ul>
+        <li>Over 600 international and Indian brands</li>
+        <li>Premium cinema halls and food courts</li>
+        <li>Luxury fashion, electronics, and lifestyle stores</li>
+        <li>Regular events and seasonal sales</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Weekdays for relaxed shopping</li>
+        <li>Evenings for food and entertainment</li>
+        <li>Festive seasons for big sales</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Things to Do</h2>
+      <ul>
+        <li>Shop top fashion and lifestyle brands</li>
+        <li>Watch movies at PVR ICON or INOX</li>
+        <li>Enjoy fine dining or quick bites</li>
+        <li>Visit the open-air courtyard for events</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="phoenix-mall-script.js"></script>
+</body>
+</html>
