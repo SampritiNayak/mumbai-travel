@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Mumbai Explorer</div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destination.html">Destinations</a></li>
+      <li><a href="food.html">Food & Drink</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search for destinations..." onkeydown="if(event.key==='Enter') searchDestination()">
+    <button onclick="searchDestination()">Search</button>
+    <div id="searchResult"></div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Local Mumbai Travel Guide</h1>
+      <p>Discover the best attractions, food, and stays in Mumbai!</p>
+      <a href="destination.html" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="cards-section">
+    <h2>Popular Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="marine1.jpg" alt="Marine Drive">
+        <h3><a href="marinee.html">Marine Drive</a></h3>
+        <p>Famous sunset view and long seafront walk.</p>
+      </div>
+      <div class="card">
+        <img src="gate1.jpg" alt="Gateway of India">
+        <h3><a href="gateeve.html">Gateway of India</a></h3>
+        <p>Iconic monument and tourist landmark.</p>
+      </div>
+      <div class="card">
+        <img src="csmt1.png" alt="CST Station">
+        <h3><a href="csmt.html">Shivaji Terminus</a></h3>
+        <p>Historic railway station and UNESCO site.</p>
+      </div>
+      <div class="card">
+        <img src="ele1.png" alt="Elephanta Caves">
+        <h3><a href="elephanta.html">Elephanta Caves</a></h3>
+        <p>Ancient cave temples with stone sculptures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mumbai Explorer. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+
+    function searchDestination() {
+      const input = document.getElementById("searchInput").value.trim().toLowerCase();
+
+      const pages = {
+        "marine drive": "marinee.html",
+        "gateway of india": "gateeve.html",
+        "shivaji terminus": "csmt.html",
+        "elephanta caves": "elephanta.html",
+        "karjat hill": "karjat.html",
+        "borivali national park": "borivali.html",
+        "juhu beach": "juhu.html",
+        "film city": "filmcity.html",
+        "haji ali": "haji.html",
+        "crawford market": "cr.html",
+        "siddhivinayak temple": "siddhi.html",
+        "bandra-worli sea link": "sea.html",
+        "phoenix mall": "phoenix.html",
+        "nehru planetarium": "nehru planetarium.html",
+        "iskon temple": "iskon.html",
+        "pagoda": "pagoda.html"
+      };
+
+      if (pages[input]) {
+        window.location.href = pages[input];
+      } else {
+        alert("Sorry, No match found!!.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+

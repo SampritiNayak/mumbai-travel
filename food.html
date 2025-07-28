@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Famous Mumbai Foods</title>
+  <link rel="stylesheet" href="food.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <h1 class="page-title">Famous Street Foods of Mumbai</h1>
+
+  <div class="food-gallery">
+    <div class="food-card">
+      <img src="vada.jpg" alt="Vada Pav" onclick="openModal(this)">
+      <h3>Vada Pav</h3>
+      <p>Spicy potato filling in a bun, Mumbai’s classic snack.</p>
+    </div>
+    <div class="food-card">
+      <img src="pani.jpg" alt="Pani Puri" onclick="openModal(this)">
+      <h3>Pani Puri</h3>
+      <p>Crispy puris filled with spicy and tangy water.</p>
+    </div>
+    <div class="food-card">
+      <img src="bhel.jpg" alt="Bhel Puri" onclick="openModal(this)">
+      <h3>Bhel Puri</h3>
+      <p>A mix of puffed rice, veggies, and chutneys.</p>
+    </div>
+    <div class="food-card">
+      <img src="misal.jpg" alt="Misal Pav" onclick="openModal(this)">
+      <h3>Misal Pav</h3>
+      <p>Spicy curry with sprouts, served with pav.</p>
+    </div>
+    <div class="food-card">
+      <img src="pavvaji.webp" alt="Pav Bhaji" onclick="openModal(this)">
+      <h3>Pav Bhaji</h3>
+      <p>Buttery pav with spicy mashed veggies.</p>
+    </div>
+    <div class="food-card">
+      <img src="sevpuri.webp" alt="Sev Puri" onclick="openModal(this)">
+      <h3>Sev Puri</h3>
+      <p>Chaat with crispy puris, sev, chutneys, and veggies.</p>
+    </div>
+    <div class="food-card">
+      <img src="keemapav.jpg" alt="Kheema Pav" onclick="openModal(this)">
+      <h3>Kheema Pav</h3>
+      <p>Minced meat curry served with soft buns.</p>
+    </div>
+    <div class="food-card">
+      <img src="bombysandr.jpg" alt="Bombay Sandwich" onclick="openModal(this)">
+      <h3>Bombay Sandwich</h3>
+      <p>Layered veg sandwich with chutney and masala.</p>
+    </div>
+    <div class="food-card">
+      <img src="falooda.jpg" alt="Falooda" onclick="openModal(this)">
+      <h3>Falooda</h3>
+      <p>A sweet dessert drink with rose syrup, milk, and jelly.</p>
+    </div>
+    <div class="food-card">
+      <img src="modak.webp" alt="Modak" onclick="openModal(this)">
+      <h3>Modak</h3>
+      <p>Sweet dumplings filled with coconut and jaggery.</p>
+    </div>
+  </div>
+
+  <!-- Modal for image zoom -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <footer>© 2025 Mumbai Travel Guide. All rights reserved.</footer>
+
+  <script src="food-script.js"></script>
+</body>
+</html>

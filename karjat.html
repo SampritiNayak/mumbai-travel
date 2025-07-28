@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karjat Hill - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="karjat.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Karjat Hill</h1>
+
+    <div class="gallery">
+      <img src="k2.jpg" alt="Karjat View" onclick="openModal(this)">
+      <img src="k3.webp" alt="Karjat Hills" onclick="openModal(this)">
+      <img src="k4.jpg" alt="Nature in Karjat" onclick="openModal(this)">
+      <img src="k5.jpg" alt="Greenery in Karjat" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🏞️ Introduction</h2>
+      <p>Karjat is a picturesque hill station near Mumbai known for its lush greenery, waterfalls, and scenic trekking trails. It's a popular weekend getaway for nature lovers and adventure seekers.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Karjat has historical forts and caves like Kondana Caves, which date back to the Buddhist era. It has been a key point for ancient trade routes and is rich in Maratha heritage.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Monsoon (July to September) for lush views and waterfalls</li>
+        <li>Winter (November to February) for trekking and camping</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📍 Things to Do</h2>
+      <ul>
+        <li>Trek to Kondana Caves</li>
+        <li>River rafting during monsoon</li>
+        <li>Visit ND Studio</li>
+        <li>Explore scenic trails and waterfalls</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="karjat.js"></script>
+</body>
+</html>

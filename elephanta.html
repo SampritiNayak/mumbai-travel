@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elephanta Caves - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="elephanta.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Explore Elephanta Caves</h1>
+
+    <div class="gallery">
+      <img src="e1.webp" alt="Elephanta 1" onclick="openModal(this)">
+      <img src="e2.webp" alt="Elephanta 2" onclick="openModal(this)">
+      <img src="e3.jpg" alt="Elephanta 3" onclick="openModal(this)">
+      <img src="e4.jpeg" alt="Elephanta 4" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🏞️ Overview</h2>
+      <p>
+        Elephanta Caves are located on Elephanta Island, about 11 km from Mumbai. These rock-cut caves are known for their stunning sculptures and are a UNESCO World Heritage Site.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🕉️ Religious Importance</h2>
+      <p>
+        The caves are primarily dedicated to Lord Shiva, featuring the famous Trimurti – a three-headed sculpture representing his creator, preserver, and destroyer forms.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🗿 History</h2>
+      <p>
+        Believed to date back to the 5th to 8th centuries, the caves were carved from solid basalt rock. Portuguese explorers named the island after finding a large elephant statue near the shore.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🛥️ How to Reach</h2>
+      <p>
+        You can reach Elephanta Island by ferry from the Gateway of India. The journey takes about an hour and offers a scenic view of the Mumbai harbor.
+      </p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content" />
+    <span class="close" onclick="closeModal()">&times;</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="ele.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ISKCON Temple Juhu - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="iskcon-temple-style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>ISKCON Temple, Juhu</h1>
+
+    <div class="gallery">
+      <img src="is2.webp" alt="ISKCON Front View" onclick="openModal(this)">
+      <img src="is3.avif" alt="Temple Interior" onclick="openModal(this)">
+      <img src="is4.jpg" alt="Devotees Worshipping" onclick="openModal(this)">
+      <img src="is5.jpg" alt="Festive Evening" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🛕 Introduction</h2>
+      <p>ISKCON Temple in Juhu is a serene and spiritual space dedicated to Lord Krishna. It’s one of Mumbai’s most visited temples, attracting devotees and tourists alike for prayer, peace, and prasadam.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 Highlights</h2>
+      <ul>
+        <li>Magnificent marble temple architecture</li>
+        <li>Regular kirtans, aartis, and spiritual lectures</li>
+        <li>Govinda’s pure vegetarian restaurant</li>
+        <li>Gift shop and spiritual book store</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Morning aarti (4:30 AM – 5:00 AM)</li>
+        <li>Evening aarti and cultural programs</li>
+        <li>Festivals like Janmashtami</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🙏 Things to Do</h2>
+      <ul>
+        <li>Attend soulful aarti sessions</li>
+        <li>Relax in temple gardens</li>
+        <li>Eat at the Govinda’s restaurant</li>
+        <li>Join spiritual workshops or lectures</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="iskcon-temple-script.js"></script>
+</body>
+</html>

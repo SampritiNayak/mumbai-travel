@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Film City - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="flim.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Film City (Dadasaheb Phalke Chitra Nagari)</h1>
+
+    <div class="gallery">
+      <img src="f2.webp" alt="Film City Entrance" onclick="openModal(this)">
+      <img src="f3.jpeg" alt="Sets and Studios" onclick="openModal(this)">
+      <img src="f4.avif" alt="Shooting Location" onclick="openModal(this)">
+      <img src="f5.webp" alt="Film City Tour" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🎬 Introduction</h2>
+      <p>Film City is the heart of Bollywood, located in Goregaon, Mumbai. It’s a massive film and TV studio complex where thousands of movies, serials, and shows have been shot over decades.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Established in 1977 and named after legendary filmmaker Dadasaheb Phalke, Film City spans over 500 acres. It features indoor and outdoor studios, fake cities, temples, lakes, and forests.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>October to March</li>
+        <li>Visit with official tours only</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎥 Things to See</h2>
+      <ul>
+        <li>Live shooting sets (if available)</li>
+        <li>Famous film sets and replicas</li>
+        <li>Film City guided tour (book online)</li>
+        <li>Photo spots with Bollywood themes</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="flim.js"></script>
+</body>
+</html>

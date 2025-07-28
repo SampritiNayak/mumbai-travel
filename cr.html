@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crawford Market - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="cr.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Crawford Market</h1>
+
+    <div class="gallery">
+      <img src="cr2.webp" alt="Crawford Market Exterior" onclick="openModal(this)">
+      <img src="cr4.webp" alt="Shops Inside Market" onclick="openModal(this)">
+      <img src="cr3.jpg" alt="Fruit and Vegetable Section" onclick="openModal(this)">
+      <img src="cr5.webp" alt="Busy Market Area" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🛍️ Introduction</h2>
+      <p>Crawford Market, now officially known as Mahatma Jyotiba Phule Mandai, is one of the oldest and most famous markets in Mumbai. It offers a wide range of goods — from fruits to pets to home decor.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Built in 1869, the market was named after Arthur Crawford, the first Municipal Commissioner of Mumbai. It features stunning Norman and Flemish architecture, and parts of it were designed by Lockwood Kipling, father of writer Rudyard Kipling.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Morning for fresh produce</li>
+        <li>Weekdays to avoid weekend rush</li>
+        <li>October to March for comfortable weather</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🧺 Things to Do</h2>
+      <ul>
+        <li>Buy fresh fruits, vegetables, and dry fruits</li>
+        <li>Shop for imported goods and stationery</li>
+        <li>Explore the pet and poultry section</li>
+        <li>Admire the old colonial architecture</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="cr.js"></script>
+</body>
+</html>

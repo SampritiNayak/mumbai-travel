@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haji Ali Dargah - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="haji.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Haji Ali Dargah</h1>
+
+    <div class="gallery">
+      <img src="h2.jpg" alt="Haji Ali View" onclick="openModal(this)">
+      <img src="h3.jpeg" alt="Haji Ali at Sunset" onclick="openModal(this)">
+      <img src="h4.jpg" alt="Haji Ali Causeway" onclick="openModal(this)">
+      <img src="h5.jpg" alt="People at Haji Ali" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🕌 Introduction</h2>
+      <p>The Haji Ali Dargah is a famous religious and tourist spot located on an islet off the coast of Worli in Mumbai. It is visited by people of all faiths and is known for its serene location and Indo-Islamic architecture.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Built in 1431, the dargah houses the tomb of Sayyed Peer Haji Ali Shah Bukhari, a wealthy merchant who gave up worldly possessions to travel to Mecca. The structure is surrounded by the sea and is accessible via a narrow causeway.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>October to March for pleasant weather</li>
+        <li>Weekdays for less crowd</li>
+        <li>Low tide timings preferred</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>✨ Things to Experience</h2>
+      <ul>
+        <li>Peaceful sea walk to the Dargah</li>
+        <li>Architectural beauty of the white domes</li>
+        <li>Spiritual atmosphere inside the shrine</li>
+        <li>Beautiful views of the Arabian Sea</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="haji.js"></script>
+</body>
+</html>

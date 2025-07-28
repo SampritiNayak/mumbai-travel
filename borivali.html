@@ -1,0 +1,73 @@
+
+<html>
+<head>
+  <title>Borivali National Park - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="bori.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Explore Borivali National Park</h1>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <img src="b1.jpeg" alt="Borivali 1" onclick="openModal(this)">
+      <img src="b3.avif" alt="Borivali 2" onclick="openModal(this)">
+      <img src="b2.webp" alt="Borivali 3" onclick="openModal(this)">
+      <img src="b4.webp" alt="Borivali 1" onclick="openModal(this)">
+    </div>
+
+    <!-- Info Card -->
+    <div class="card">
+      <h2>🌿 Introduction</h2>
+      <p>Borivali National Park, officially known as Sanjay Gandhi National Park, is a lush green oasis within Mumbai. It is famous for its rich biodiversity, walking trails, and the ancient Kanheri Caves.</p>
+
+      <h2>📍 History</h2>
+      <p>The park was established in 1969 and covers an area of over 100 sq km. The Kanheri Caves inside date back to the 1st century BCE and served as a Buddhist settlement.</p>
+
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>November to February</li>
+        <li>Morning hours for pleasant weather</li>
+      </ul>
+
+      <h2>🎟️ Timings & Entry</h2>
+      <ul>
+        <li>Open: 7:30 AM – 6:30 PM</li>
+        <li>Entry Fee: ₹85 for adults</li>
+        <li>Optional: Toy Train, Safari, Bicycle Rentals</li>
+      </ul>
+
+      <h2>✨ Activities</h2>
+      <ul>
+        <li>Tiger & Lion Safari</li>
+        <li>Kanheri Caves exploration</li>
+        <li>Nature walks and cycling</li>
+        <li>Boating and picnicking</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Image Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <footer>© 2025 Mumbai Travel Guide. All rights reserved.</footer>
+  <script src="bori.js"></script>
+</body>
+</html>

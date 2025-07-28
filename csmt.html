@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSMT - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="csmt-style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Chhatrapati Shivaji Maharaj Terminus</h1>
+
+    <div class="gallery">
+      <img src="c1.webp" alt="CSMT 1" onclick="openModal(this)">
+      <img src="c3.jpg" alt="CSMT 2" onclick="openModal(this)">
+      <img src="c2.jpg" alt="CSMT 3" onclick="openModal(this)">
+      <img src="c4.jpg" alt="CSMT 4" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🏛️ History</h2>
+      <p>
+        Built in 1887 to commemorate Queen Victoria’s Golden Jubilee, CSMT is a UNESCO World Heritage Site. It was formerly known as Victoria Terminus.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🏰 Architecture</h2>
+      <p>
+        The station showcases Victorian Gothic Revival style blended with traditional Indian architecture. Its turrets, domes, pointed arches and stained glass windows are spectacular.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🚉 Transport Hub</h2>
+      <p>
+        CSMT serves as the headquarters of Central Railway and is one of the busiest train stations in India. It connects suburban local trains as well as long-distance routes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>📍 Location & Timings</h2>
+      <p>
+        Located in South Mumbai near Fort area, it is accessible 24x7. Its night lighting makes it even more mesmerizing.
+      </p>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content" />
+    <span class="close" onclick="closeModal()">&times;</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- JS Link -->
+  <script src="csmt.js"></script>
+</body>
+</html>

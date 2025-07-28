@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juhu Beach - Mumbai Travel Guide</title>
+  <link rel="stylesheet" href="juhu.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Mumbai Travel Guide</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div id="navMenu" class="dropdown-menu">
+    <a href="index.html">Home</a>
+    <a href="destination.html">Destinations</a>
+    <a href="food.html">Food</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <h1>Juhu Beach</h1>
+
+    <div class="gallery">
+      <img src="j2.jpg" alt="Juhu Beach Sunset" onclick="openModal(this)">
+      <img src="j3.jpg" alt="Juhu Food Stalls" onclick="openModal(this)">
+      <img src="j4.webp" alt="People at Juhu" onclick="openModal(this)">
+      <img src="j5.webp"Aerial View of Juhu" onclick="openModal(this)">
+    </div>
+
+    <div class="card">
+      <h2>🏖️ Introduction</h2>
+      <p>Juhu Beach is one of Mumbai’s most popular seaside destinations, known for its sandy shores, lively atmosphere, and iconic street food. It’s a favorite spot for locals and tourists alike.</p>
+    </div>
+
+    <div class="card">
+      <h2>📜 History</h2>
+      <p>Located in the western suburbs, Juhu Beach has been a public attraction since the 19th century. It’s surrounded by luxurious homes of Bollywood celebrities and is a hub of social activity.</p>
+    </div>
+
+    <div class="card">
+      <h2>🕒 Best Time to Visit</h2>
+      <ul>
+        <li>Evening for sunset views</li>
+        <li>October to March for pleasant weather</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🍢 Things to Do</h2>
+      <ul>
+        <li>Enjoy Mumbai street food like bhel puri and pav bhaji</li>
+        <li>Watch sunset with sea breeze</li>
+        <li>Horse and camel rides</li>
+        <li>Relax with friends and family</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mumbai Travel Guide. All rights reserved.
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+  </div>
+
+  <script src="juhu.js"></script>
+</body>
+</html>
